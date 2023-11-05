@@ -15,13 +15,26 @@
 <button  *ngIf="displayAngularTemplate===true; else notify">Add Product</button>
 
 <div class="ng-container-exmp">
-<ng-container *ngIf="toggle; else toggleOff">
-  <p>Toggle On</p>
-</ng-container>
+  <ng-container *ngIf="toggle; else toggleOff">
+    <p>Toggle On</p>
+  </ng-container>
 
-<ng-template #toggleOff>
-  <p>Toggle Off</p>
-</ng-template>
+  <ng-template #toggleOff>
+    <p>Toggle Off</p>
+  </ng-template>
 
-<button type="button" (click)="onToggle()">Toggle</button>
+  <button type="button" (click)="onToggle()">Toggle</button>
+</div>
+
+<div class="product-card-container">
+  <app-product-card>
+    <h2 class="title">Angular 14</h2>
+    <h5>Best Learning Card</h5>
+  </app-product-card>
+  <app-product-card>
+    <h2 class="title">Angular 15</h2>
+  </app-product-card>
+  <app-product-card>
+    <h2 class="title">Angular 16</h2>
+  </app-product-card>
 </div>
