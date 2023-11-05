@@ -5,9 +5,16 @@
 .product-card-container{
     margin-top:20px;
     display: flex;
-    background-color: blueviolet;
+    background-color: rgb(163, 106, 221);
 }
 
 .title{
     padding-bottom: 10px;
+}
+
+.ng-content-child-example{
+    display: flex;
+    height: 200px;
+    padding: 10px 10px;;
+    background-color: rgb(145, 153, 2);
 }

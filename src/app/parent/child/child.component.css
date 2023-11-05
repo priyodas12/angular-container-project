@@ -1,0 +1,22 @@
+.child-card{
+    margin:10px 20px;
+    padding:10px 20px;
+    background-color: rgb(245, 152, 245);
+    border-radius: 10px;;
+}
+
+button{
+    background-color: rgb(164, 233, 96);
+    height:30px;
+    width:130px;
+    border-radius: 5px;;
+    margin-top: 10px;
+}
+
+.red{
+    color:red
+}
+
+.green{
+    color:green
+}

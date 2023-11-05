@@ -1,0 +1,19 @@
+.parent-card{
+    display: flex;
+    margin:10px 20px;
+    padding:10px 20px;
+    background-color: rgb(120, 247, 237);
+     border-radius: 10px;;
+}
+
+.red{
+    color:red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.green{
+    color:green;
+     font-size: 12px;
+    font-weight: bold;
+}

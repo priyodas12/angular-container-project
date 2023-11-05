@@ -1,0 +1,6 @@
+<div class="parent-card">
+    <app-child (toggleColorEmitter)="onChildToggleColorChange($event)">
+        <h2 class="child-heading">Child Heading from Parent</h2>
+        <p #paragraph [ngClass]="{'red':childToggleColor===true,'green':childToggleColor===false}">Test from Parent</p>
+    </app-child>
+</div>
