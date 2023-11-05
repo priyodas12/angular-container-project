@@ -1,0 +1,27 @@
+<h1>NG_Template_Example</h1>
+
+<ng-template #templateRef>
+  <p>This is NG Template</p>
+</ng-template>
+
+<ng-template #notify>
+  <button type="button">Notify Me!</button>
+</ng-template>
+
+<!--Display element-->
+<body class="template-example" *ngTemplateOutlet="templateRef">  
+</body>
+
+<button  *ngIf="displayAngularTemplate===true; else notify">Add Product</button>
+
+<div class="ng-container-exmp">
+<ng-container *ngIf="toggle; else toggleOff">
+  <p>Toggle On</p>
+</ng-container>
+
+<ng-template #toggleOff>
+  <p>Toggle Off</p>
+</ng-template>
+
+<button type="button" (click)="onToggle()">Toggle</button>
+</div>
